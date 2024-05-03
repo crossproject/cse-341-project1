@@ -40,3 +40,29 @@ GET https://cse-341-project1-mz42.onrender.com/contacts
 ### Get contact by id
 GET https://cse-341-project1-mz42.onrender.com/contacts/650c5812c06bc031e32200a1
 
+### Create contact
+POST https://cse-341-project1-mz42.onrender.com/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Daniel",
+    "lastName": "Parra",
+    "email": "dparra@test.com",
+    "favoriteColor": "Black",
+    "birthday": "05/29/1994"
+}
+
+### Update contact
+PUT https://cse-341-project1-mz42.onrender.com/contacts/66342ce2db703c2da4f54fb2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Luis",
+    "lastName": "Parra",
+    "email": "dparra@parra.com",
+    "favoriteColor": "Red",
+    "birthday": "05/29/1994"
+}
+
+### Delete contact
+DELETE https://cse-341-project1-mz42.onrender.com/contacts/66342ce2db703c2da4f54fb2 HTTP/1.1
